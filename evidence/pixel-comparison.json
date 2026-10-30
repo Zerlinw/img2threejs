@@ -1,0 +1,74 @@
+{
+  "reference": "reference\\infernal-citadel.png",
+  "render": "renders\\hero.png",
+  "comparisonSize": [
+    800,
+    450
+  ],
+  "referenceStats": {
+    "meanRgb": [
+      0.0913,
+      0.0362,
+      0.0446
+    ],
+    "medianRgb": [
+      0.0549,
+      0.0235,
+      0.0314
+    ],
+    "p90Rgb": [
+      0.2157,
+      0.0863,
+      0.098
+    ],
+    "p99Rgb": [
+      0.5843,
+      0.1647,
+      0.1686
+    ],
+    "meanLuma": 0.0485,
+    "medianLuma": 0.0335,
+    "meanSaturation": 0.0584,
+    "warmPixelFraction": 0.4071,
+    "edgeDensity": 0.0714,
+    "darkFraction": 0.7119,
+    "highlightFraction": 0.0005
+  },
+  "renderStats": {
+    "meanRgb": [
+      0.13,
+      0.0304,
+      0.0269
+    ],
+    "medianRgb": [
+      0.0745,
+      0.0157,
+      0.0157
+    ],
+    "p90Rgb": [
+      0.3176,
+      0.0627,
+      0.0549
+    ],
+    "p99Rgb": [
+      0.6824,
+      0.2627,
+      0.1686
+    ],
+    "meanLuma": 0.0513,
+    "medianLuma": 0.0276,
+    "meanSaturation": 0.1045,
+    "warmPixelFraction": 0.6955,
+    "edgeDensity": 0.0297,
+    "darkFraction": 0.7413,
+    "highlightFraction": 0.0048
+  },
+  "meanAbsoluteRgbDelta": [
+    0.1212,
+    0.0361,
+    0.0374
+  ],
+  "meanAbsoluteLumaDelta": 0.0543,
+  "rgbHistogramIntersection": 0.8644,
+  "note": "Deterministic pixel evidence only; semantic acceptance is recorded separately."
+}

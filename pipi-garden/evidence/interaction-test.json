@@ -1,0 +1,80 @@
+{
+  "base": "http://127.0.0.1:5176/",
+  "checkedAt": "2026-10-29T15:19:40.950Z",
+  "passed": true,
+  "checks": {
+    "liveResidents": true,
+    "initialQuality": true,
+    "expandedGround": true,
+    "expandedDecorations": true,
+    "lassoSmallSpawn": true,
+    "smallSpawnToast": true,
+    "smallSpawnScale": true,
+    "largeSpawn": true,
+    "lassoScalesWithCircle": true,
+    "invalidLassoBlocked": true,
+    "invalidLassoToast": true,
+    "clickSelects": true,
+    "dropSnapsToWalkable": true,
+    "dropSnapToast": true,
+    "deleteRemovesPanda": true,
+    "cameraDraftDuringDrag": true,
+    "cameraFullAfterDrag": true,
+    "cameraYawChanged": true,
+    "cameraFitAfterDrag": true,
+    "cameraRightButton": true,
+    "cameraReset": true,
+    "cameraArrowKey": true,
+    "cameraBlankDrag": true,
+    "fitAtAllYaws": true,
+    "smallFollowsBig": true,
+    "noPandaInWater": true,
+    "spawnedThirty": true,
+    "maxThirtyGuard": true,
+    "maxToast": true,
+    "tenPandasPresent": true,
+    "tenPandaFps": true,
+    "noConsoleErrors": true,
+    "mobileLasso": true,
+    "mobileCameraToolsFit": true,
+    "mobileCameraFit": true,
+    "mobileNoConsoleErrors": true,
+    "mobileTouchLasso": true
+  },
+  "notes": [
+    "lasso scales: small=1.26 large=2.03",
+    "followers: 7->null, 8->7, 9->7",
+    "10 pandas: 165.2 fps, 722 calls, 830735 tris"
+  ],
+  "errors": [],
+  "screenshots": [
+    "pipi-garden\\renders\\stageb-overview.png",
+    "pipi-garden\\renders\\stageb-spawn.png",
+    "pipi-garden\\renders\\stageb-spawned.png",
+    "pipi-garden\\renders\\stageb-selected.png",
+    "pipi-garden\\renders\\stageb-rotated.png",
+    "pipi-garden\\renders\\stageb-10pandas.png",
+    "pipi-garden\\renders\\stageb-mobile.png"
+  ],
+  "performance": {
+    "tenPandasCalls": "10 pandas: 165.2 fps, 722 calls, 830735 tris"
+  },
+  "camera": {
+    "position": [
+      15.857192004850763,
+      36.80375030230421,
+      27.695160883988308
+    ],
+    "target": [
+      0,
+      1.2,
+      0
+    ],
+    "fov": 38,
+    "aspect": 1.6,
+    "yaw": 0.52,
+    "pitch": 0.84,
+    "distance": 47.81317297834903
+  },
+  "mobilePandas": 1
+}

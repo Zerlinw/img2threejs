@@ -1,0 +1,329 @@
+{
+  "base": "http://127.0.0.1:5176/",
+  "checkedAt": "2026-10-29T15:20:32.247Z",
+  "captures": {
+    "hero": {
+      "view": "hero",
+      "ready": true,
+      "frozen": true,
+      "quality": "full",
+      "camera": {
+        "position": [
+          15.857192004850763,
+          36.80375030230421,
+          27.695160883988308
+        ],
+        "target": [
+          0,
+          1.2,
+          0
+        ],
+        "fov": 38,
+        "aspect": 1.6,
+        "yaw": 0.52,
+        "pitch": 0.84,
+        "distance": 47.81317297834903
+      },
+      "cameraFit": {
+        "x": 0.5678698935358361,
+        "y": 0.8999999999608846
+      },
+      "platform": {
+        "size": 20.7846,
+        "area": 431.99959716000006,
+        "radius": 3.6
+      },
+      "pond": {
+        "u": 0.6096966022920817,
+        "v": 0.6616581507462256,
+        "x": 2.28,
+        "z": 3.36,
+        "rx": 1.7,
+        "rz": 1.25
+      },
+      "pandas": 3,
+      "selected": null,
+      "agents": [
+        {
+          "id": 1,
+          "name": "栗子",
+          "u": 0.4596,
+          "v": 0.5924,
+          "x": -0.8396978399999999,
+          "z": 1.920497040000001,
+          "scale": 1.9,
+          "action": "eat",
+          "dragging": false,
+          "home": {
+            "u": 0.4596,
+            "v": 0.5924,
+            "radius": 1.4
+          },
+          "leaderId": null,
+          "screen": {
+            "x": 748.166115529836,
+            "y": 533.3005395729413
+          }
+        },
+        {
+          "id": 2,
+          "name": "团团",
+          "u": 0.5289,
+          "v": 0.5115,
+          "x": 0.6006749400000008,
+          "z": 0.23902289999999907,
+          "scale": 1.62,
+          "action": "walk",
+          "dragging": false,
+          "home": {
+            "u": 0.5289,
+            "v": 0.5115,
+            "radius": 1.4
+          },
+          "leaderId": null,
+          "screen": {
+            "x": 812.2432491472953,
+            "y": 518.661672990538
+          }
+        },
+        {
+          "id": 3,
+          "name": "竹笋",
+          "u": 0.6055654703693159,
+          "v": 0.5297879245369299,
+          "x": 2.1941360754380823,
+          "z": 0.6191300963302735,
+          "scale": 1.94,
+          "action": "sit",
+          "dragging": false,
+          "home": {
+            "u": 0.6055654703693159,
+            "v": 0.5297879245369299,
+            "radius": 1.4
+          },
+          "leaderId": null,
+          "screen": {
+            "x": 849.4493438964251,
+            "y": 541.8298571816407
+          }
+        }
+      ],
+      "stats": {
+        "calls": 362,
+        "triangles": 646117,
+        "points": 64,
+        "meshes": 189,
+        "lights": 8,
+        "obstacles": 52
+      },
+      "elapsed": 2.2
+    },
+    "orbits": [
+      {
+        "yaw": 0,
+        "fit": {
+          "x": 0.6430989796393641,
+          "y": 0.8999999992086316
+        }
+      },
+      {
+        "yaw": 90,
+        "fit": {
+          "x": 0.6430989796393647,
+          "y": 0.8999999992086314
+        }
+      },
+      {
+        "yaw": 180,
+        "fit": {
+          "x": 0.6430989796393641,
+          "y": 0.8999999992086308
+        }
+      },
+      {
+        "yaw": 270,
+        "fit": {
+          "x": 0.6430989796393647,
+          "y": 0.8999999992086308
+        }
+      }
+    ],
+    "poses": {
+      "view": "poses",
+      "ready": true,
+      "frozen": true,
+      "quality": "full",
+      "camera": {
+        "position": [
+          0,
+          1.8,
+          9
+        ],
+        "target": [
+          0,
+          0.6,
+          0
+        ],
+        "fov": 30,
+        "aspect": 1.6,
+        "yaw": 0,
+        "pitch": 0,
+        "distance": 0
+      },
+      "cameraFit": {
+        "x": 0,
+        "y": 0
+      },
+      "platform": {
+        "size": 20.7846,
+        "area": 431.99959716000006,
+        "radius": 3.6
+      },
+      "pond": {
+        "u": 0.6096966022920817,
+        "v": 0.6616581507462256,
+        "x": 2.28,
+        "z": 3.36,
+        "rx": 1.7,
+        "rz": 1.25
+      },
+      "pandas": 1,
+      "selected": null,
+      "agents": [],
+      "stats": {
+        "calls": 275,
+        "triangles": 133926,
+        "points": 0,
+        "meshes": 189,
+        "lights": 8,
+        "obstacles": 52
+      },
+      "elapsed": 2.2
+    },
+    "closeup": {
+      "view": "closeup",
+      "ready": true,
+      "frozen": true,
+      "quality": "full",
+      "camera": {
+        "position": [
+          0.95,
+          1.55,
+          6.2
+        ],
+        "target": [
+          0,
+          0.6,
+          0
+        ],
+        "fov": 31,
+        "aspect": 1.6,
+        "yaw": 0,
+        "pitch": 0,
+        "distance": 0
+      },
+      "cameraFit": {
+        "x": 0,
+        "y": 0
+      },
+      "platform": {
+        "size": 20.7846,
+        "area": 431.99959716000006,
+        "radius": 3.6
+      },
+      "pond": {
+        "u": 0.6096966022920817,
+        "v": 0.6616581507462256,
+        "x": 2.28,
+        "z": 3.36,
+        "rx": 1.7,
+        "rz": 1.25
+      },
+      "pandas": 1,
+      "selected": null,
+      "agents": [],
+      "stats": {
+        "calls": 61,
+        "triangles": 26922,
+        "points": 0,
+        "meshes": 189,
+        "lights": 8,
+        "obstacles": 52
+      },
+      "elapsed": 2.2
+    },
+    "empty": {
+      "view": "hero",
+      "ready": true,
+      "frozen": true,
+      "quality": "full",
+      "camera": {
+        "position": [
+          15.857192004850763,
+          36.80375030230421,
+          27.695160883988308
+        ],
+        "target": [
+          0,
+          1.2,
+          0
+        ],
+        "fov": 38,
+        "aspect": 1.6,
+        "yaw": 0.52,
+        "pitch": 0.84,
+        "distance": 47.81317297834903
+      },
+      "cameraFit": {
+        "x": 0.5678698935358361,
+        "y": 0.8999999999608846
+      },
+      "platform": {
+        "size": 20.7846,
+        "area": 431.99959716000006,
+        "radius": 3.6
+      },
+      "pond": {
+        "u": 0.6096966022920817,
+        "v": 0.6616581507462256,
+        "x": 2.28,
+        "z": 3.36,
+        "rx": 1.7,
+        "rz": 1.25
+      },
+      "pandas": 0,
+      "selected": null,
+      "agents": [],
+      "stats": {
+        "calls": 202,
+        "triangles": 567715,
+        "points": 64,
+        "meshes": 189,
+        "lights": 8,
+        "obstacles": 52
+      },
+      "elapsed": 2.2
+    }
+  },
+  "checks": {
+    "ready": true,
+    "previewPandas": true,
+    "fitAt0": true,
+    "fitAt90": true,
+    "fitAt180": true,
+    "fitAt270": true,
+    "posesReady": true,
+    "closeupReady": true,
+    "emptyVariantLoads": true,
+    "noConsoleErrors": true,
+    "meshes": 189,
+    "triangles": 646117,
+    "heroCalls": 362,
+    "heroFit": {
+      "x": 0.5678698935358361,
+      "y": 0.8999999999608846
+    }
+  },
+  "errors": [],
+  "passed": true
+}

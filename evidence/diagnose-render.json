@@ -1,0 +1,16 @@
+{
+  "passed": true,
+  "checks": {
+    "silhouetteIoU": 0.9049,
+    "aspectRatioDelta": 0.0,
+    "scaleDelta": 0.0,
+    "bilateralSymmetryError": 0.0277
+  },
+  "failures": [],
+  "maskWarnings": [
+    "reference: image is not clearly isolated from background; using most pixels as material evidence",
+    "render: image is not clearly isolated from background; using most pixels as material evidence"
+  ],
+  "renderHash": "ee0683dec27b69a9",
+  "passId": null
+}

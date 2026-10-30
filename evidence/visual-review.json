@@ -1,0 +1,125 @@
+{
+  "task": "Infernal Citadel procedural Three.js reconstruction",
+  "reference": "reference/infernal-citadel.png",
+  "render": "renders/hero.png",
+  "comparison": "renders/comparison.png",
+  "orbitSheet": "renders/orbit-sheet.png",
+  "cameraView": "hero / reference-matched top-down",
+  "captureEvidence": {
+    "hero": "renders/hero.png",
+    "heroUi": "renders/hero-ui.png",
+    "explodeUi": "renders/explode-ui.png",
+    "nave": "renders/nave.png",
+    "detail": "renders/detail.png",
+    "orbits": [
+      "renders/orbit-front.png",
+      "renders/orbit-right.png",
+      "renders/orbit-rear.png",
+      "renders/orbit-left.png"
+    ],
+    "silhouettes": [
+      "renders/silhouette/front.png",
+      "renders/silhouette/right.png",
+      "renders/silhouette/rear.png",
+      "renders/silhouette/left.png"
+    ],
+    "screenshotReadBack": "All listed PNGs were opened and visually inspected after capture."
+  },
+  "decision": "accepted-stylized",
+  "overallScore": 0.62,
+  "layerScores": {
+    "silhouetteProportion": 0.7,
+    "componentStructure": 0.62,
+    "formDetail": 0.52,
+    "materialSurface": 0.6,
+    "lightingCamera": 0.72,
+    "spatialDepth": 0.58
+  },
+  "featureReviews": [
+    {
+      "id": "portal-pentagram-beam",
+      "score": 0.84,
+      "tier": "critical",
+      "notes": "Raised octagonal sanctum, 16 m pentagram inlay, red gate and vertical beam are all present and read immediately. Beam is thicker and more orange than the reference's needle-thin red shaft."
+    },
+    {
+      "id": "gothic-architecture",
+      "score": 0.72,
+      "tier": "critical",
+      "notes": "Crenellated towers, pointed arch frames, buttresses, lancets and massed basalt are represented. The plan is more regular and less ruined than the reference's asymmetric sprawl."
+    },
+    {
+      "id": "lava-chasm",
+      "score": 0.7,
+      "tier": "critical",
+      "notes": "Animated FBM lava appears in the outer chasms with hot fissures and ember light. The reference has more lava openings cutting through the interior and stronger red bounce onto cliff faces."
+    },
+    {
+      "id": "processional-nave",
+      "score": 0.77,
+      "tier": "critical",
+      "notes": "Central spine, side parapets, crossings, banners, torches, candelabra and descending stair are present and aligned with the reference's axis."
+    },
+    {
+      "id": "banners-runes",
+      "score": 0.66,
+      "tier": "important",
+      "notes": "Blood banners with alpha-cut tattered hems, sigils and floor rune circles are procedural and readable. Cloth remains darker than the reference and the upper fa莽ade banners read partly as luminous wall sigils."
+    },
+    {
+      "id": "candle-light",
+      "score": 0.75,
+      "tier": "important",
+      "notes": "390 animated flames, clusters, torch posts, fire bowls and braziers create warm pools along the nave. Local pools are tighter than the reference's broad candle-lit terraces."
+    },
+    {
+      "id": "gargoyle-chains",
+      "score": 0.68,
+      "tier": "critical",
+      "notes": "The western gargoyle, high perch, wings, horns, red eyes and two giant chains are visible in the upper-left silhouette. The chain links are smaller and less foreground-dominant than the reference."
+    },
+    {
+      "id": "layout-density",
+      "score": 0.45,
+      "tier": "critical",
+      "notes": "The biggest mismatch. The reference is a dense, asymmetric maze of overlapping wards, courtyards and broken roofs; this reconstruction uses fewer, cleaner walled islands. Edge density is 0.030 vs 0.071 in the reference."
+    },
+    {
+      "id": "camera-framing",
+      "score": 0.74,
+      "tier": "important",
+      "notes": "Top-down one-point-perspective framing, central gate at top and foreground stair at bottom match the reference composition. Reference is slightly more top-down and shows more of the side floors."
+    }
+  ],
+  "strengths": [
+    "Immediate recognition of the infernal sanctum, pentagram, red beam and processional axis.",
+    "Consistent dark-maroon / ember palette with a real PBR response and soft shadows.",
+    "A populated scene: 3,519 meshes, 134k triangles, 390 flames, 11 lights, animating lava and embers.",
+    "Fully code-built: no mesh, image, texture or HDRI downloads."
+  ],
+  "mismatches": [
+    "Spatial density and asymmetry are lower than the reference; side wards read as broad platforms rather than dense ruined rooms.",
+    "Render is more saturated and has brighter warm pixels than the reference.",
+    "High-frequency architectural linework is lower (edge density 0.030 vs 0.071).",
+    "Upper fa莽ade banner cloth is too dark, leaving the sigil to carry the shape.",
+    "Lava is concentrated at the outer margins rather than cutting through the interior."
+  ],
+  "metrics": {
+    "divineEyeFidelity": 0.6022,
+    "divineEyeTarget": 0.85,
+    "silhouetteIoU": 0.9049,
+    "tonalParity": 0.9802,
+    "edgeOverlap": 0.2813,
+    "ssim": 0.1908,
+    "phashSimilarity": 0.5,
+    "rgbHistogramIntersection": 0.8644,
+    "meanSaturationReference": 0.0584,
+    "meanSaturationRender": 0.1045,
+    "edgeDensityReference": 0.0714,
+    "edgeDensityRender": 0.0297,
+    "turntableGatePassed": true,
+    "multiAngleDegenerate": false
+  },
+  "rationale": "The result is accepted as a stylized architectural reconstruction: the identity-defining composition, portal, pentagram, beam, lava, banners, candles and gargoyle/chains are present and the scene is structurally real from four azimuths. It is not accepted as a metric-complete match to the reference painting; deterministic fidelity is 0.60 versus a 0.85 target, and the layout-density and high-frequency-detail gaps are documented rather than hidden."
+}
+

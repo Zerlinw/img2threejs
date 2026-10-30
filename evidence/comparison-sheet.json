@@ -1,0 +1,9 @@
+{
+  "comparisonImage": "D:\\DeepSeek-Harness-Project\\img2threejs\\renders\\comparison.png",
+  "referenceImage": "D:\\DeepSeek-Harness-Project\\img2threejs\\reference\\infernal-citadel.png",
+  "renderScreenshot": "D:\\DeepSeek-Harness-Project\\img2threejs\\renders\\hero.png",
+  "layout": "left=reference,right=render",
+  "panelWidth": 1200,
+  "panelHeight": 720,
+  "note": "Send this image to AI vision for global, layer, and semantic feature scores; this script does not score."
+}

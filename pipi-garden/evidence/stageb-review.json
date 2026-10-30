@@ -1,0 +1,242 @@
+{
+  "subject": "皮皮园 / Pipi Garden",
+  "stage": "B - expanded ground + decorations",
+  "reference": null,
+  "referenceNote": "Text-brief scene, not an image reconstruction. No reference-fidelity score is claimed.",
+  "captures": {
+    "stageb-overview.png": {
+      "path": "pipi-garden/renders/stageb-overview.png",
+      "width": 1600,
+      "height": 1000,
+      "sha256": "19eb9948e8c68f0eeb345727fa34b16b2d2962c278166b178ff8cfde7a3c4518"
+    },
+    "expanded-ground-8.png": {
+      "path": "pipi-garden/renders/expanded-ground-8.png",
+      "width": 1600,
+      "height": 1000,
+      "sha256": "08bcc9a03e74f85b25137ebd5fb72efc551884f113a74d5ebc09f16811ca46d3"
+    },
+    "stageb-spawn.png": {
+      "path": "pipi-garden/renders/stageb-spawn.png",
+      "width": 1600,
+      "height": 1000,
+      "sha256": "af35f367c5978252fd97599afc05f71e91f2985661f784dae1fffbe9b7a2929e"
+    },
+    "stageb-spawned.png": {
+      "path": "pipi-garden/renders/stageb-spawned.png",
+      "width": 1600,
+      "height": 1000,
+      "sha256": "37da8d011d7e4a8c74070c2adf811c9fdcd272542e91a0b77194d61a233d944b"
+    },
+    "stageb-selected.png": {
+      "path": "pipi-garden/renders/stageb-selected.png",
+      "width": 1600,
+      "height": 1000,
+      "sha256": "d90d9e6af2f7be2a9b65f8260d5a35bb7e696994a991e9ae848c58b729f09ab5"
+    },
+    "stageb-rotated.png": {
+      "path": "pipi-garden/renders/stageb-rotated.png",
+      "width": 1600,
+      "height": 1000,
+      "sha256": "03023b96207cc855db989119fd33394e178aa77e73d4e7170818a2a0d4068942"
+    },
+    "stageb-10pandas.png": {
+      "path": "pipi-garden/renders/stageb-10pandas.png",
+      "width": 1600,
+      "height": 1000,
+      "sha256": "4c0e85d0e9815cc2326fc9000d67eff376e5a840f2afef82dc5f08c5714b9a9c"
+    },
+    "stageb-mobile.png": {
+      "path": "pipi-garden/renders/stageb-mobile.png",
+      "width": 390,
+      "height": 844,
+      "sha256": "5316937d0dc87d1b43544809493d8051d6a4a54d887cce5d65420eadb91e12d8"
+    },
+    "stageb-singlefile.png": {
+      "path": "pipi-garden/renders/stageb-singlefile.png",
+      "width": 1200,
+      "height": 900,
+      "sha256": "8a4c528d79b259ce055dbcc2c5b367429dbd6e258256c9de22bc149fe5afce82"
+    },
+    "stageb-preview.png": {
+      "path": "pipi-garden/renders/stageb-preview.png",
+      "width": 1200,
+      "height": 900,
+      "sha256": "7acce837826202138a97c939b02a92554d27d7ec5893d40fb4884cefc5bcffc5"
+    }
+  },
+  "automatedGate": {
+    "base": "http://127.0.0.1:5176/",
+    "checkedAt": "2026-10-29T15:19:40.950Z",
+    "passed": true,
+    "checks": {
+      "liveResidents": true,
+      "initialQuality": true,
+      "expandedGround": true,
+      "expandedDecorations": true,
+      "lassoSmallSpawn": true,
+      "smallSpawnToast": true,
+      "smallSpawnScale": true,
+      "largeSpawn": true,
+      "lassoScalesWithCircle": true,
+      "invalidLassoBlocked": true,
+      "invalidLassoToast": true,
+      "clickSelects": true,
+      "dropSnapsToWalkable": true,
+      "dropSnapToast": true,
+      "deleteRemovesPanda": true,
+      "cameraDraftDuringDrag": true,
+      "cameraFullAfterDrag": true,
+      "cameraYawChanged": true,
+      "cameraFitAfterDrag": true,
+      "cameraRightButton": true,
+      "cameraReset": true,
+      "cameraArrowKey": true,
+      "cameraBlankDrag": true,
+      "fitAtAllYaws": true,
+      "smallFollowsBig": true,
+      "noPandaInWater": true,
+      "spawnedThirty": true,
+      "maxThirtyGuard": true,
+      "maxToast": true,
+      "tenPandasPresent": true,
+      "tenPandaFps": true,
+      "noConsoleErrors": true,
+      "mobileLasso": true,
+      "mobileCameraToolsFit": true,
+      "mobileCameraFit": true,
+      "mobileNoConsoleErrors": true,
+      "mobileTouchLasso": true
+    },
+    "notes": [
+      "lasso scales: small=1.26 large=2.03",
+      "followers: 7->null, 8->7, 9->7",
+      "10 pandas: 165.2 fps, 722 calls, 830735 tris"
+    ],
+    "errors": [],
+    "screenshots": [
+      "pipi-garden\\renders\\stageb-overview.png",
+      "pipi-garden\\renders\\stageb-spawn.png",
+      "pipi-garden\\renders\\stageb-spawned.png",
+      "pipi-garden\\renders\\stageb-selected.png",
+      "pipi-garden\\renders\\stageb-rotated.png",
+      "pipi-garden\\renders\\stageb-10pandas.png",
+      "pipi-garden\\renders\\stageb-mobile.png"
+    ],
+    "performance": {
+      "tenPandasCalls": "10 pandas: 165.2 fps, 722 calls, 830735 tris"
+    },
+    "camera": {
+      "position": [
+        15.857192004850763,
+        36.80375030230421,
+        27.695160883988308
+      ],
+      "target": [
+        0,
+        1.2,
+        0
+      ],
+      "fov": 38,
+      "aspect": 1.6,
+      "yaw": 0.52,
+      "pitch": 0.84,
+      "distance": 47.81317297834903
+    },
+    "mobilePandas": 1
+  },
+  "expandedGround": {
+    "originalArea": 144,
+    "newSize": 20.7846,
+    "newArea": 432,
+    "areaMultiplier": 3.0,
+    "edgeMultiplier": 1.732,
+    "checkedBy": "expandedGround assertion in interaction-test.json"
+  },
+  "decorations": [
+    "second sakura tree",
+    "six outer bamboo groves plus two mid-ring groves",
+    "outer flower meadows and dense flower beds",
+    "large shrubs and rock clusters",
+    "mushroom clusters",
+    "back wooden fence",
+    "two extra stone lanterns",
+    "stone entry path and circular stepping-stone path",
+    "outer bench",
+    "expanded petal/mote/butterfly ambient layer",
+    "8,000 instanced grass blades"
+  ],
+  "visualReadback": {
+    "method": "All PNGs opened at full size with an image-capable tool.",
+    "overview": "The full 20.8x20.8 ground is visible with the original cream HUD; the central garden is now surrounded by meadow decoration.",
+    "expanded": "No-UI view shows the larger slab, second sakura, fence, bamboo ring, flower beds, shrubs and paths.",
+    "rotated": "Rotating the larger platform keeps all corners and tall props inside the frame; new decoration remains visible from the side.",
+    "tenPandas": "Ten pandas spread across the expanded ground with no console errors; last measured 165.2 fps.",
+    "mobile": "390x844 shows the complete platform with margins; mouse and real touch lasso both spawn.",
+    "singleFile": "The inlined HTML loads from file://, reports platform area 432 and spawns through the lasso with no console errors.",
+    "preview": "The production preview at :5177 loads the three-resident expanded scene with the full HUD."
+  },
+  "checks": {
+    "liveResidents": true,
+    "initialQuality": true,
+    "expandedGround": true,
+    "expandedDecorations": true,
+    "lassoSmallSpawn": true,
+    "smallSpawnToast": true,
+    "smallSpawnScale": true,
+    "largeSpawn": true,
+    "lassoScalesWithCircle": true,
+    "invalidLassoBlocked": true,
+    "invalidLassoToast": true,
+    "clickSelects": true,
+    "dropSnapsToWalkable": true,
+    "dropSnapToast": true,
+    "deleteRemovesPanda": true,
+    "cameraDraftDuringDrag": true,
+    "cameraFullAfterDrag": true,
+    "cameraYawChanged": true,
+    "cameraFitAfterDrag": true,
+    "cameraRightButton": true,
+    "cameraReset": true,
+    "cameraArrowKey": true,
+    "cameraBlankDrag": true,
+    "fitAtAllYaws": true,
+    "smallFollowsBig": true,
+    "noPandaInWater": true,
+    "spawnedThirty": true,
+    "maxThirtyGuard": true,
+    "maxToast": true,
+    "tenPandasPresent": true,
+    "tenPandaFps": true,
+    "noConsoleErrors": true,
+    "mobileLasso": true,
+    "mobileCameraToolsFit": true,
+    "mobileCameraFit": true,
+    "mobileNoConsoleErrors": true,
+    "mobileTouchLasso": true
+  },
+  "performance": {
+    "viewport": "1600x1000",
+    "gpu": "NVIDIA GTX 1650 SUPER, D3D11, headless Chromium",
+    "pandas": 10,
+    "measured": "135-165 fps across runs; last run 165.2 fps",
+    "drawCalls": 722,
+    "triangles": 830735,
+    "retinaCheck": "162.6 fps at deviceScaleFactor 1.75 (separate run)"
+  },
+  "singleFile": {
+    "path": "dist-pipi-garden/pipi-garden.html",
+    "testedFromFileUrl": true,
+    "ready": true,
+    "spawned": 1,
+    "platformArea": 431.99959716000006,
+    "consoleErrors": []
+  },
+  "knownLimitations": [
+    "The 3x ground is 3x in area (edge x1.73), not 3x per side.",
+    "The auto-fit camera pulls back for the larger platform, so pandas appear smaller than before.",
+    "Thirty pandas is a hard cap and visibly crowds the diorama.",
+    "60 fps is validated at ten pandas on this GPU; low-end phone performance is not measured.",
+    "Ground brush marks still read as soft mottling at full-diorama distance."
+  ]
+}

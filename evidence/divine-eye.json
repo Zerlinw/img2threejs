@@ -1,0 +1,52 @@
+{
+  "verdict": "low-confidence",
+  "action": "probe",
+  "fidelity": 0.6022,
+  "fidelityTarget": 0.85,
+  "hardGateFailures": [],
+  "maskWarnings": [
+    "reference: image is not clearly isolated from background; using most pixels as material evidence",
+    "render: image is not clearly isolated from background; using most pixels as material evidence"
+  ],
+  "disagreementSpread": 1.0,
+  "signals": {
+    "silhouetteIoU": 0.9049,
+    "scaleDelta": 0.0,
+    "aspectRatioDelta": 0.0,
+    "symmetryParity": 0.0,
+    "phashSimilarity": 0.5,
+    "ssim": 0.1908,
+    "edgeOverlap": 0.2813,
+    "blowoutParity": 1.0,
+    "flatRegionScore": 0.4048,
+    "tonalParity": 0.9802,
+    "objectness": 0.8721,
+    "hueZoneParity": 0.625
+  },
+  "specularWash": {
+    "satRatio": 1.363,
+    "hueDriftDeg": -24.1,
+    "towardCyan": false,
+    "flagged": false,
+    "advice": null
+  },
+  "reportOnlySignals": [
+    "hueZoneParity",
+    "specularWash"
+  ],
+  "reconstructionModeSuspected": false,
+  "weights": {
+    "proportion": 1.0,
+    "symmetry": 0.5,
+    "phash": 1.0,
+    "ssim": 1.5,
+    "edgeOverlap": 1.0,
+    "blowoutParity": 0.8,
+    "flatRegion": 0.8,
+    "tonalParity": 1.0,
+    "objectness": 1.5
+  },
+  "reference": "D:\\DeepSeek-Harness-Project\\img2threejs\\reference\\infernal-citadel.png",
+  "render": "D:\\DeepSeek-Harness-Project\\img2threejs\\renders\\hero.png",
+  "note": "deterministic ensemble; zero VLM/token. hueZoneParity is REPORT-ONLY (colour-aware, CIEDE2000) — not yet in the weighted fidelity; promote after corpus calibration. VLM layer (§3.4) runs only if this passes."
+}

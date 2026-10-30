@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <meta name="theme-color" content="#f6ecd9" />
+    <meta
+      name="description"
+      content="皮皮园：一个程序化 Three.js 小熊猫竹林微缩场景。没有外部图片素材。"
+    />
+    <title>皮皮园 · 小熊猫的竹林午后</title>
+    <link
+      rel="icon"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='15' fill='%23f6ecd9'/%3E%3Ccircle cx='32' cy='37' r='15' fill='%23c96338'/%3E%3Ccircle cx='17' cy='20' r='6' fill='%23a84a2c'/%3E%3Ccircle cx='47' cy='20' r='6' fill='%23a84a2c'/%3E%3Ccircle cx='26' cy='35' r='3' fill='%234a2b20'/%3E%3Ccircle cx='38' cy='35' r='3' fill='%234a2b20'/%3E%3Ccircle cx='27' cy='34' r='1' fill='%23fff8ec'/%3E%3Ccircle cx='39' cy='34' r='1' fill='%23fff8ec'/%3E%3C/svg%3E"
+    />
+    <script type="module" crossorigin src="./assets/index-C0NaGutn.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index-x8tDFmGR.css">
+  </head>
+  <body>
+    <main id="app">
+      <canvas id="scene" aria-label="皮皮园小熊猫竹林场景"></canvas>
+      <svg
+        id="lasso-layer"
+        class="lasso-layer"
+        aria-hidden="true"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path id="lasso-path" class="lasso-path"></path>
+      </svg>
+      <div class="paper-grain" aria-hidden="true"></div>
+      <div class="vignette" aria-hidden="true"></div>
+
+      <header class="hud hud-top" id="hud">
+        <div class="brand">
+          <div class="brand-mark" aria-hidden="true">皮</div>
+          <div class="brand-copy">
+            <p class="eyebrow">Pipi Garden · Procedural Three.js</p>
+            <h1>皮皮园</h1>
+            <p class="subtitle">小熊猫的竹林午后</p>
+          </div>
+        </div>
+        <div class="hud-right-stack">
+          <div class="top-note"><i aria-hidden="true"></i>画圈召唤 · 拖动 · 旋转视角</div>
+          <div class="camera-tools" role="group" aria-label="视角控制">
+            <button type="button" class="camera-btn" data-camera="left" aria-label="向左旋转 45 度">
+              ↺ 45°
+            </button>
+            <button type="button" class="camera-btn camera-btn-reset" data-camera="reset" aria-label="复位视角">
+              复位
+            </button>
+            <button type="button" class="camera-btn" data-camera="right" aria-label="向右旋转 45 度">
+              45° ↻
+            </button>
+          </div>
+        </div>
+      </header>
+
+      <div class="hud bottom-left">
+        <div class="hints">
+          <span><b>画圈</b>召唤</span>
+          <span><b>拖动</b>拎起</span>
+          <span><b>点选 + Delete</b>删除</span>
+          <span><b>空白处 / 右键</b>旋转</span>
+        </div>
+        <div class="field-notes">
+          <span>竹林</span>
+          <span>樱花</span>
+          <span>池塘</span>
+        </div>
+        <div class="footline">奶油纸面 · 浮空微缩地台 · 无外部贴图</div>
+      </div>
+
+      <aside class="hud selection-card" id="selection-card" hidden aria-live="polite">
+        <div class="selection-copy">
+          <span>正在看</span>
+          <strong id="selection-name">栗子</strong>
+          <small id="selection-size">1.20× · idle</small>
+        </div>
+        <button type="button" id="btn-delete" class="selection-delete">删除</button>
+      </aside>
+
+      <div class="hud bottom-right">
+        <div class="badge"><strong id="resident-count">3</strong> 位小居民</div>
+      </div>
+
+      <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+      <div class="loading" id="loading" role="status" aria-live="polite">
+        <div class="loading-mark" aria-hidden="true"></div>
+        <p>正在铺开皮皮园</p>
+        <small>种下竹子，等一只小熊猫醒来</small>
+      </div>
+
+      <noscript>
+        <div class="fallback"><strong>需要开启 JavaScript</strong><span>皮皮园由实时 Three.js 场景组成。</span></div>
+      </noscript>
+    </main>
+  </body>
+</html>

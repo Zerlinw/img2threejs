@@ -1,0 +1,293 @@
+{
+  "subject": "皮皮园 / Pipi Garden",
+  "stage": "A - static diorama",
+  "reference": null,
+  "referenceNote": "No source reference image. This is a text-brief scene, not an image reconstruction, so no reference-fidelity score is claimed.",
+  "engine": "Three.js r170 + TypeScript + Vite; Canvas 2D used only to bake procedural textures.",
+  "captures": {
+    "overview.png": {
+      "path": "pipi-garden/renders/overview.png",
+      "width": 1600,
+      "height": 1000,
+      "sha256": "d00370de0bc55b4d9f59e9419a5b8f88d0061ef470353bb6e69c3b04ec709b98"
+    },
+    "poses.png": {
+      "path": "pipi-garden/renders/poses.png",
+      "width": 1600,
+      "height": 1000,
+      "sha256": "bd1e2183980631221b5892dfcae3d891002f72f0b39449f496bd0b458b7229a5"
+    },
+    "closeup.png": {
+      "path": "pipi-garden/renders/closeup.png",
+      "width": 1200,
+      "height": 1200,
+      "sha256": "6a2c2c3753fc323a253b50f837dfdb282b48ea469a95456341aec29d3b82d74e"
+    },
+    "overview-ui.png": {
+      "path": "pipi-garden/renders/overview-ui.png",
+      "width": 1600,
+      "height": 1000,
+      "sha256": "a3c25dc71d3a64a92fb5e971e76e3d327d15c8b71988986ec75f9d584f363966"
+    },
+    "mobile.png": {
+      "path": "pipi-garden/renders/mobile.png",
+      "width": 390,
+      "height": 844,
+      "sha256": "4e0111b7b848ebcb798fb665252a208a844257639c70f97e7db6e01429e53719"
+    },
+    "orbit-0.png": {
+      "path": "pipi-garden/renders/orbit-0.png",
+      "width": 1200,
+      "height": 900,
+      "sha256": "d81d89ba6e413f7ad3d31f4ad771d7b3d6abfae03e70118ec6d599199e5cfd1a"
+    },
+    "orbit-90.png": {
+      "path": "pipi-garden/renders/orbit-90.png",
+      "width": 1200,
+      "height": 900,
+      "sha256": "147c18b6287e352f1e81566a14195ab35a577501f3529da622dadaa4778a4110"
+    },
+    "orbit-180.png": {
+      "path": "pipi-garden/renders/orbit-180.png",
+      "width": 1200,
+      "height": 900,
+      "sha256": "de50f0afa7ec74002cea314be4d2105dcd7d3754cd31065604640c295c625838"
+    },
+    "orbit-270.png": {
+      "path": "pipi-garden/renders/orbit-270.png",
+      "width": 1200,
+      "height": 900,
+      "sha256": "41f6a8563af36506c1da6da846d669e084132ec0e2b8bebc6fe872283c8cdbc6"
+    },
+    "overview-build.png": {
+      "path": "pipi-garden/renders/overview-build.png",
+      "width": 1200,
+      "height": 900,
+      "sha256": "ffb953be05e02150c5010e7ba9f621c4e97741fce328b8cf380f6038e93c2bef"
+    },
+    "overview-singlefile.png": {
+      "path": "pipi-garden/renders/overview-singlefile.png",
+      "width": 1200,
+      "height": 900,
+      "sha256": "b133270487bd269bc4f22f5d1098eec7360c9ad385862a962fede592d7b7934f"
+    }
+  },
+  "structuralGate": {
+    "base": "http://127.0.0.1:5176/",
+    "checkedAt": "2026-10-29T14:14:01.259Z",
+    "captures": {
+      "hero": {
+        "view": "hero",
+        "ready": true,
+        "frozen": true,
+        "camera": {
+          "position": [
+            9.752456383525432,
+            23.096942523426296,
+            17.033018738323435
+          ],
+          "target": [
+            0,
+            1.2,
+            0
+          ],
+          "fov": 38,
+          "aspect": 1.6
+        },
+        "cameraFit": {
+          "x": 0.51896339917555,
+          "y": 0.8799999998359678
+        },
+        "pandas": 3,
+        "stats": {
+          "calls": 313,
+          "triangles": 262163,
+          "points": 34,
+          "meshes": 140,
+          "lights": 6,
+          "obstacles": 18
+        },
+        "elapsed": 2.2
+      },
+      "orbits": [
+        {
+          "yaw": 0,
+          "fit": {
+            "x": 0.5648211921219765,
+            "y": 0.879999999585826
+          }
+        },
+        {
+          "yaw": 90,
+          "fit": {
+            "x": 0.5648211921219773,
+            "y": 0.8799999995858256
+          }
+        },
+        {
+          "yaw": 180,
+          "fit": {
+            "x": 0.5648211921219766,
+            "y": 0.8799999995858251
+          }
+        },
+        {
+          "yaw": 270,
+          "fit": {
+            "x": 0.564821192121977,
+            "y": 0.8799999995858255
+          }
+        }
+      ],
+      "poses": {
+        "view": "poses",
+        "ready": true,
+        "frozen": true,
+        "camera": {
+          "position": [
+            0,
+            1.8,
+            9
+          ],
+          "target": [
+            0,
+            0.6,
+            0
+          ],
+          "fov": 30,
+          "aspect": 1.6
+        },
+        "cameraFit": {
+          "x": 0,
+          "y": 0
+        },
+        "pandas": 1,
+        "stats": {
+          "calls": 275,
+          "triangles": 133926,
+          "points": 0,
+          "meshes": 140,
+          "lights": 6,
+          "obstacles": 18
+        },
+        "elapsed": 2.2
+      },
+      "closeup": {
+        "view": "closeup",
+        "ready": true,
+        "frozen": true,
+        "camera": {
+          "position": [
+            0.95,
+            1.55,
+            6.2
+          ],
+          "target": [
+            0,
+            0.6,
+            0
+          ],
+          "fov": 31,
+          "aspect": 1.6
+        },
+        "cameraFit": {
+          "x": 0,
+          "y": 0
+        },
+        "pandas": 1,
+        "stats": {
+          "calls": 61,
+          "triangles": 26922,
+          "points": 0,
+          "meshes": 140,
+          "lights": 6,
+          "obstacles": 18
+        },
+        "elapsed": 2.2
+      },
+      "empty": {
+        "view": "hero",
+        "ready": true,
+        "frozen": true,
+        "camera": {
+          "position": [
+            9.752456383525432,
+            23.096942523426296,
+            17.033018738323435
+          ],
+          "target": [
+            0,
+            1.2,
+            0
+          ],
+          "fov": 38,
+          "aspect": 1.6
+        },
+        "cameraFit": {
+          "x": 0.51896339917555,
+          "y": 0.8799999998359678
+        },
+        "pandas": 0,
+        "stats": {
+          "calls": 153,
+          "triangles": 183761,
+          "points": 34,
+          "meshes": 140,
+          "lights": 6,
+          "obstacles": 18
+        },
+        "elapsed": 2.2
+      }
+    },
+    "checks": {
+      "ready": true,
+      "previewPandas": true,
+      "fitAt0": true,
+      "fitAt90": true,
+      "fitAt180": true,
+      "fitAt270": true,
+      "posesReady": true,
+      "closeupReady": true,
+      "emptyVariantLoads": true,
+      "noConsoleErrors": true,
+      "meshes": 140,
+      "triangles": 262163,
+      "heroCalls": 313,
+      "heroFit": {
+        "x": 0.51896339917555,
+        "y": 0.8799999998359678
+      }
+    },
+    "errors": [],
+    "passed": true
+  },
+  "visualReadback": {
+    "method": "Full-size PNGs were opened with an image-capable tool after capture.",
+    "overview": "Platform fully in frame; tall bamboo, sakura, sign and lantern have visible tops; cream paper margins remain; cut face has strata seams, roots and pebbles.",
+    "poses": "Five poses are legible: side-on walk, low sit, eating with two hands on a bamboo shoot, tail wag, idle. Face has drooping cream patches, catchlights and blush.",
+    "closeup": "Bamboo shoot held at the chest; paws and long eating arms read; ringed tail not visible in this front three-quarter crop.",
+    "orbits": "All four 90-degree views keep the slab within the frame; camera fit max NDC stays below 0.90.",
+    "mobile": "390x844 portrait keeps the slab inside the frame, HUD fits without horizontal overflow, and the paper grade stays bright."
+  },
+  "scores": {
+    "compositionAndWhitespace": 0.84,
+    "characterCutenessAndRead": 0.85,
+    "pauseAndActionLegibility": 0.8,
+    "materialAndGroundDetail": 0.76,
+    "lightingAndPost": 0.83,
+    "phoneAndHudLayout": 0.78
+  },
+  "knownLimitations": [
+    "Interaction (lasso spawn, drag, delete, orbit controls) is intentionally not implemented in Stage A.",
+    "At the full-diorama distance the 30k+ ground brush marks read as soft mottling rather than individual strokes.",
+    "The sakura canopy is a stylized cluster of shaded spheres, not a botanical branch-and-leaf model.",
+    "The platform cut face uses colour bands plus seam tubes and a few 3D roots; it is not a geological scan.",
+    "No 10-panda or mobile interaction performance gate has been run yet."
+  ],
+  "singleFile": {
+    "path": "dist-pipi-garden/pipi-garden.html",
+    "testedFromFileUrl": true,
+    "ready": true,
+    "consoleErrors": []
+  }
+}

@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Infernal Citadel — Procedural Three.js</title>
+    <link
+      rel="icon"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%23060304'/%3E%3Cpath d='M32 7 56 32 32 57 8 32Z' fill='none' stroke='%23b52b17' stroke-width='2'/%3E%3Cpath d='M32 17v30M22 27h20' stroke='%23ff3d1d' stroke-width='3'/%3E%3C/svg%3E"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600&family=Inter:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div id="app">
+      <canvas id="scene"></canvas>
+      <div class="vignette" aria-hidden="true"></div>
+      <div class="grain" aria-hidden="true"></div>
+      <div class="atmosphere" aria-hidden="true"></div>
+
+      <header class="hud hud-top">
+        <div class="brand">
+          <div class="sigil" aria-hidden="true">
+            <span></span><span></span><span></span>
+          </div>
+          <div>
+            <p class="eyebrow">Procedural reconstruction · 0 external art assets</p>
+            <h1>Infernal Citadel</h1>
+            <p class="subtitle">The Ninth Gate · Sanctum of the Crimson Choir</p>
+          </div>
+        </div>
+        <div class="stats" aria-label="Scene statistics">
+          <div><strong id="stat-meshes">—</strong><span>meshes</span></div>
+          <div><strong id="stat-tris">—</strong><span>triangles</span></div>
+          <div><strong>100%</strong><span>code-built</span></div>
+        </div>
+      </header>
+
+      <aside class="hud panel" id="inspector" aria-live="polite">
+        <p class="panel-kicker">Selected structure</p>
+        <h2 id="inspect-title">The Crimson Nave</h2>
+        <p id="inspect-copy">
+          Click any balcony, tower, causeway or ritual structure to inspect its
+          role in the citadel.
+        </p>
+        <dl class="facts">
+          <div><dt>Position</dt><dd id="inspect-pos">—</dd></div>
+          <div><dt>System</dt><dd id="inspect-kind">—</dd></div>
+          <div><dt>Height</dt><dd id="inspect-height">—</dd></div>
+        </dl>
+      </aside>
+
+      <div class="hud bottom-left">
+        <div class="controls-hint">
+          <span><b>Drag</b> orbit</span>
+          <span><b>Scroll</b> dolly</span>
+          <span><b>Right-drag</b> pan</span>
+          <span><b>Click</b> inspect</span>
+        </div>
+        <div class="palette">
+          <span class="swatch" style="--c:#1b1719"></span>
+          <span class="swatch" style="--c:#4b3a37"></span>
+          <span class="swatch" style="--c:#8f1b13"></span>
+          <span class="swatch" style="--c:#ff5a24"></span>
+          <span class="swatch" style="--c:#ffd08a"></span>
+          <em>basalt · ash · blood · ember · candle</em>
+        </div>
+      </div>
+
+      <div class="hud bottom-right">
+        <div class="view-buttons" role="group" aria-label="Camera views">
+          <button type="button" data-view="hero" class="active">Hero</button>
+          <button type="button" data-view="aerial">Aerial</button>
+          <button type="button" data-view="nave">Nave</button>
+          <button type="button" data-view="orbit">Orbit</button>
+        </div>
+        <div class="tool-buttons">
+          <button type="button" id="btn-explode">Explode</button>
+          <button type="button" id="btn-closeup">Detail</button>
+        </div>
+        <label class="explode-control">
+          <span>Separation</span>
+          <input id="explode" type="range" min="0" max="1" step="0.01" value="0" />
+        </label>
+      </div>
+
+      <div class="loading" id="loading">
+        <div class="loading-mark"></div>
+        <p>Forging the ninth gate</p>
+        <small>building basalt, blood-light and cinder</small>
+      </div>
+    </div>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
