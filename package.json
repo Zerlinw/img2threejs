@@ -12,7 +12,16 @@
   },
   "scripts": {
     "test": "node --test bin/img2threejs.mjs-test.mjs",
-    "package:check": "npm pack --dry-run"
+    "package:check": "npm pack --dry-run",
+    "scene:dev": "vite infernal-citadel --host 127.0.0.1 --port 5173",
+    "scene:build": "vite build infernal-citadel --outDir ../dist-infernal-citadel",
+    "scene:preview": "vite preview infernal-citadel --host 127.0.0.1 --port 5174",
+    "scene:pipi:dev": "vite pipi-garden --host 127.0.0.1 --port 5176",
+    "scene:pipi:build": "vite build pipi-garden",
+    "scene:pipi:preview": "vite preview pipi-garden --host 127.0.0.1 --port 5177",
+    "scene:pipi:check": "tsc --noEmit -p pipi-garden/tsconfig.json",
+    "scene:pipi:bundle": "npm run scene:pipi:build && node tools/inline-pipi-build.mjs",
+    "scene:pipi:test": "node tools/test-pipi-interaction.mjs http://127.0.0.1:5176/ pipi-garden/evidence/interaction-test.json"
   },
   "files": [
     "bin/img2threejs.mjs"
@@ -35,5 +44,14 @@
   "bugs": {
     "url": "https://github.com/img2threejs/img2threejs/issues"
   },
-  "homepage": "https://github.com/img2threejs/img2threejs#readme"
+  "homepage": "https://github.com/img2threejs/img2threejs#readme",
+  "dependencies": {
+    "three": "^0.170.0"
+  },
+  "devDependencies": {
+    "@types/three": "^0.170.0",
+    "playwright": "^1.64.1",
+    "typescript": "^5.7.3",
+    "vite": "^6.0.11"
+  }
 }

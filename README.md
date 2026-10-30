@@ -42,13 +42,102 @@ Quality-gated, animation-ready, and deliberately token-efficient — reconstruct
 
 *Reference images reconstructed in code as animation-ready Three.js models, running live in the browser.*
 
-### [→ Open the Live Demo Gallery](https://img2threejs.io/)
-
-Every model in the gallery is generated code, running in your browser. No mesh files, no downloads.
+> **Zerlin's fork · 二开作品**
+>
+> This branch adds two self-directed Three.js scenes built with the img2threejs
+> workflow: **Infernal Citadel** and **Pipi Garden**. They are independent
+> derivative work, not upstream showcase entries. Upstream skill documentation
+> continues below the two-work section.
 
 ---
 
-## Live demos
+## 二开作品 / Zerlin's works
+
+Two code-only scenes built on top of the img2threejs pipeline. Both are fully
+procedural: no downloaded models, image textures, HDRIs or art packs.
+
+<table>
+<tr>
+<td width="50%" valign="top">
+<a href="infernal-citadel/README.md"><img src="renders/hero-ui.png" width="100%" alt="Infernal Citadel — dark fantasy procedural diorama" /></a>
+<h3>1. Infernal Citadel</h3>
+<p><b>Dark-fantasy floating citadel</b><br/>
+A cathedral-citadel above a lava sea: processional nave, pentagram sanctum and
+crimson beam, walled wards, sentinels, gargoyle and hanging chains.</p>
+<p>
+<a href="infernal-citadel/README.md"><b>Read the case study →</b></a><br/>
+<a href="renders/hero.png">Hero frame</a> ·
+<a href="renders/explode-ui.png">Exploded view</a> ·
+<a href="renders/orbit-sheet.png">Orbit sheet</a>
+</p>
+<p><sub>3,519 meshes · 134k triangles · 390 animated flames · 12 sentinels</sub></p>
+</td>
+<td width="50%" valign="top">
+<a href="pipi-garden/README.md"><img src="pipi-garden/renders/stageb-overview.png" width="100%" alt="皮皮园 — procedural red panda garden" /></a>
+<h3>2. 皮皮园 · Pipi Garden</h3>
+<p><b>Interactive red-panda diorama</b><br/>
+A cream-paper floating garden with a healing toy loop: draw a lasso to spawn a
+panda, drag to lift, delete, rotate the camera, and watch small pandas follow
+the big ones.</p>
+<p>
+<a href="pipi-garden/README.md"><b>Read the case study →</b></a><br/>
+<a href="pipi-garden/renders/stageb-overview.png">Overview</a> ·
+<a href="pipi-garden/renders/expanded-ground-8.png">Expanded ground</a> ·
+<a href="pipi-garden/renders/stageb-mobile.png">Mobile</a>
+</p>
+<p><sub>20.8×20.8 ground (3× area) · 30-panda cap · 37 browser checks · 10 pandas 135–165 fps</sub></p>
+</td>
+</tr>
+</table>
+
+### What is different in this fork
+
+- **Infernal Citadel** is a single-view reconstruction of a dark-fantasy
+  reference, rebuilt from primitives, authored shapes, canvas textures and GLSL
+  lava/beam shaders. The runtime keeps named structural groups so the `Explode`
+  control can disassemble the citadel instead of moving one merged mesh.
+- **Pipi Garden** turns the same code-only approach into an interactive toy:
+  lasso spawning with size mapping, drag/drop with walkable snapping, delete,
+  orbit and preset cameras, draft/full quality switching, a 30-panda ceiling,
+  and a 3×-area meadow ring with bamboo, sakura, flowers, a fence, lanterns and
+  stone paths.
+- **No external art** is used by either scene. The screenshots above are the
+  actual browser output, not concept art.
+
+### Run the two scenes
+
+From this repository root:
+
+```bash
+npm install
+
+# Infernal Citadel
+npm run scene:dev          # http://127.0.0.1:5173/
+npm run scene:build        # dist-infernal-citadel/
+
+# Pipi Garden
+npm run scene:pipi:dev     # http://127.0.0.1:5176/
+npm run scene:pipi:build
+npm run scene:pipi:preview # http://127.0.0.1:5177/
+npm run scene:pipi:test    # 37 interaction checks against the dev server
+```
+
+### Evidence
+
+- Infernal Citadel: [`renders/`](renders), [`evidence/visual-validation.md`](evidence/visual-validation.md)
+- Pipi Garden: [`pipi-garden/renders/`](pipi-garden/renders), [`pipi-garden/evidence/stageb-validation.md`](pipi-garden/evidence/stageb-validation.md)
+- Both scenes were reviewed against the repository's screenshot gate; the local
+  README files record the commands, measured numbers and known limitations.
+
+---
+
+### [→ Open the upstream Live Demo Gallery](https://img2threejs.io/)
+
+Every model in the upstream gallery is generated code, running in your browser.
+No mesh files, no downloads. The fork's two scenes above are separate from that
+gallery.
+
+## Upstream live demos
 
 Reconstructions built entirely from primitives, procedural shaders, and generated geometry. Open any model to orbit it, inspect its reference, and read the generated source.
 
