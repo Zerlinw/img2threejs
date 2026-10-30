@@ -42,6 +42,8 @@ Quality-gated, animation-ready, and deliberately token-efficient — reconstruct
 
 *Reference images reconstructed in code as animation-ready Three.js models, running live in the browser.*
 
+**English** | [简体中文](README.zh-CN.md)
+
 > **Zerlin's fork · 二开作品**
 >
 > This branch adds two self-directed Three.js scenes built with the img2threejs
